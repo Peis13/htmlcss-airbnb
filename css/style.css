@@ -15,27 +15,39 @@
 /* Fine Regole Container */
 
 /* Regole box */
-.box {
+.container .box {
   width: 100%;
   height: calc(100% / 3);
   background: red;
   margin: auto;
   padding: 20px 20px 0;
 }
-.box:last-child {
+.container .box:last-child {
   padding-bottom: 20px;
 }
-.city {
+.container .box .city {
   width: 100%;
   height: 100%;
   background-color: white;
+  position: relative;
 }
 /* Fine Regole box */
 
 /* Regole filtro */
-.filter {
+.container .box .city .filter {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
 /* Fine Regole filtro */
+
+/* Regole nomi capitali */
+.container .box .city .filter h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-variant: small-caps;
+}
+/* Fine  Regole nomi capitali */
