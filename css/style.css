@@ -8,7 +8,6 @@
 .container {
   width: 500px;
   height: 100vh;
-  background: green;
   margin: auto;
   padding: 0 20px;
 }
@@ -18,7 +17,6 @@
 .container .box {
   width: 100%;
   height: calc(100% / 3);
-  background: red;
   margin: auto;
   padding: 20px 20px 0;
 }
@@ -52,10 +50,13 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
+.city:hover .filter{
+  display: none;
+}
 /* Fine Regole filtro */
 
 /* Regole nomi capitali */
-.container .box .city .filter h1 {
+.container .box .city h1 {
   position: absolute;
   left: 50%;
   top: 50%;
